@@ -1,0 +1,60 @@
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  grid-column: span 2 / span 2;
+}
+
+button {
+  display: flex;
+  gap: .8rem;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+img {
+  border-radius: 9999px;
+  margin: 0 auto;
+}
+
+@media ( min-width: 1024px) {
+  .buttons-container {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 9.6rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@media ( min-width: 768px) {
+  img {
+    width: 33%;
+  }
+}
